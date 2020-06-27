@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListView">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="right">
+       <Button
+           android:id="@+id/btnsortbyprice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SortByPrice">
+       </Button>
+       <Button
+           android:id="@+id/btnsortbytitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SortByTitle">
+       </Button>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rcview1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           </androidx.recyclerview.widget.RecyclerView>
+       </LinearLayout>
+   </LinearLayout>
+
+
+</FrameLayout>
